@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<config>    
+    <modules>
+        <Alanstormdotcom_Weblog>
+            <version>0.1.0</version>
+        </Alanstormdotcom_Weblog>
+    </modules>
+    
+	<frontend>
+    <routers>
+        <weblog>
+            <use>standard</use>
+            <args>
+                <module>Alanstormdotcom_Weblog</module>
+                <frontName>weblog</frontName>
+            </args>
+        </weblog>
+    </routers>
+	</frontend>
+	
+	
+
+	<global>
+    <!-- ... -->
+    <models>
+        <weblog>
+            <class>Alanstormdotcom_Weblog_Model</class>
+            <!-- 
+            need to create our own resource, can't just
+            use core_mysql4
+            -->
+            <resourceModel>weblog_mysql4</resourceModel>
+        </weblog>   
+    </models>
+    <!-- ... -->
+	</global>
+	
+	 <!-- ..|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||. -->
+	<global>
+    <!-- ... -->
+    <models>        
+        <!-- ... -->
+        <weblog_mysql4>
+            <class>Alanstormdotcom_Weblog_Model_Mysql4</class>              
+        </weblog_mysql4>
+    </models>
+	</global>
+	<!-- ..|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||. -->
+	<global>
+    <!-- ... -->
+    <resources>
+        <weblog_write>
+            <connection>
+                <use>core_write</use>
+            </connection>
+        </weblog_write>
+        <weblog_read>
+            <connection>
+                <use>core_read</use>
+            </connection>
+        </weblog_read>      
+    </resources>        
+	</global>
+	
+	<!-- ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX. -->
+
+
+	
+</config>
