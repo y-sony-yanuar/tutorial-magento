@@ -1,7 +1,7 @@
 <config>
     <tabs>
         <helloconfig translate="label" module="helloworld">
-            <label>Hello Config</label>
+            <label>Hello Config Ku</label>
             <sort_order>99999</sort_order>
         </helloconfig>
     </tabs> 
@@ -48,7 +48,7 @@
 					<show_in_store>1</show_in_store>                
 					<fields>
 						<hello_message>
-							<label>Message</label>
+							<label>Pesan</label>
 							<frontend_type>select</frontend_type>
 							<!-- adding a source model -->
 							<source_model>helloworld/words</source_model>                           

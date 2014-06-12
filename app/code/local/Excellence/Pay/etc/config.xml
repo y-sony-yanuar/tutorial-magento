@@ -1,0 +1,23 @@
+ <config>
+
+ 
+    <modules>
+        <Excellence_Pay>
+            <version>0.1.0</version>
+        </Excellence_Pay>
+    </modules>
+	
+	<default>
+        <payment>
+            <pay>
+                <active>1</active>
+                <model>pay/pay</model>
+                <order_status>processing</order_status>
+                <title>Excellence Payment Method</title>
+            </pay>
+         </payment>
+    </default>
+
+	
+	
+</config> 

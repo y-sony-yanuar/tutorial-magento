@@ -5,10 +5,10 @@
 		public function toOptionArray()
 		{
 			return array(
-				array('value'=>1, 'label'=>Mage::helper('helloworld')->__('Hello')),
-				array('value'=>2, 'label'=>Mage::helper('helloworld')->__('Goodbye')),
-				array('value'=>3, 'label'=>Mage::helper('helloworld')->__('Yes')),            
-				array('value'=>4, 'label'=>Mage::helper('helloworld')->__('No')),                       
+				array('value'=>1, 'label'=>Mage::helper('helloworld')->__('Selamat Pagi')),
+				array('value'=>2, 'label'=>Mage::helper('helloworld')->__('Selamat Tinggal')),
+				array('value'=>3, 'label'=>Mage::helper('helloworld')->__('Iya')),            
+				array('value'=>4, 'label'=>Mage::helper('helloworld')->__('Tidak')),                       
 			);
 		}
 
