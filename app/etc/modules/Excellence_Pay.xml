@@ -1,4 +1,5 @@
- <config>
+
+<config>
     <modules>
         <Excellence_Pay>
             <active>true</active>

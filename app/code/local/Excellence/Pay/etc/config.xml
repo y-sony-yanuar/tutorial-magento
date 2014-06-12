@@ -7,6 +7,15 @@
         </Excellence_Pay>
     </modules>
 	
+	<global>
+	    <helpers>
+            <pay>
+                <class>Excellence_Pay_Helper</class>
+            </pay>
+        </helpers>
+    </global>
+	
+	
 	<default>
         <payment>
             <pay>
